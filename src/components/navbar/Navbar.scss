@@ -2,33 +2,32 @@
 	position: fixed;
 	top: 20px;
 	left: 50%;
-    transform: translateX(-50%);
-    width: 55%;
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+	transform: translateX(-50%);
+	width: 55%;
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
 	background-color: rgba(236, 225, 225, 0.123);
 	// backdrop-filter: blur(15px);
-    border-radius: 3em;
-    z-index: 1000;
+	border-radius: 3em;
+	z-index: 1000;
 
-    &__logo {
-        margin-inline: 3em auto;
-        padding: 0.5em;
-        &-image {
-            width: 60px;
-        }
-    }
+	&__logo {
+		margin-inline: 3em auto;
+		padding: 0.5em;
+		&-image {
+			width: 60px;
+		}
+	}
 
-    &__list {
-        display: flex;
-        gap: 3em;
-        margin-right: 3em;
-        
-        &-item {
-            font-size: 2rem;
-        }
-    }
+	&__list {
+		display: flex;
+		gap: 3em;
+		margin-right: 3em;
+
+		&-item {
+			font-size: 2rem;
+		}
+	}
 }
-
