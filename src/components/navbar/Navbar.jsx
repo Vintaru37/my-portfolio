@@ -7,33 +7,31 @@ import './Navbar.scss';
 import logo from '../../assets/images/bg-logo.png';
 
 export default function Navbar() {
+	const navItems = [
+		{ to: '/', text: 'Home' },
+		{ to: '/9', text: 'About' },
+		{ to: '/9', text: 'Portfolio' },
+		{ to: '/9', text: 'Contact' },
+	];
 	return (
-		<nav className='nav'>
-			<div className='nav__logo'>
-				<img src={logo} alt='' className='nav__logo-image' />
-			</div>
-			<ul className='nav__list'>
-				<li className='nav__list-item'>
-					<NavLink to='/' className='nav__list-item-link'>
-						Home
-					</NavLink>
-				</li>
-				<li className='nav__list-item'>
-					<NavLink to='/' className='nav__list-item-link'>
-						About
-					</NavLink>
-				</li>
-				<li className='nav__list-item'>
-					<NavLink to='/' className='nav__list-item-link'>
-						Projects
-					</NavLink>
-				</li>
-				<li className='nav__list-item'>
-					<NavLink to='/' className='nav__list-item-link'>
-						Contact
-					</NavLink>
-				</li>
-			</ul>
-		</nav>
+		<div className='nav-container'>
+			<nav className='nav wrapper'>
+				<div className='nav__logo'>
+					<h2 className='primary-text'>Bartosz.</h2>
+					{/* <img src={logo} alt='' className='nav__logo-image' /> */}
+				</div>
+				<ul className='nav__list'>
+					{navItems.map((item) => (
+						<li key={item.text} className='nav__list-item'>
+							<NavLink
+								className='nav__list-item-link primary-text-hover'
+								to={item.to}>
+								{item.text}
+							</NavLink>
+						</li>
+					))}
+				</ul>
+			</nav>
+		</div>
 	);
 }

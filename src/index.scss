@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *,
 *::before,
 *::after {
@@ -7,10 +9,16 @@
 }
 
 :root {
-	--primary-gradient: linear-gradient(316deg, #50d8d7 0%, #923993 74%);
+	--primary-color: linear-gradient(
+		90deg,
+		rgba(110, 222, 245, 1) 0%,
+		rgba(105, 156, 243, 1) 50%,
+		rgba(100, 91, 240, 1) 100%
+	);
 }
 
 html {
+	scroll-behavior: smooth;
 	font-size: 62.5%;
 	-moz-text-size-adjust: none;
 	-webkit-text-size-adjust: none;
@@ -19,10 +27,9 @@ html {
 
 body {
 	min-height: 100vh;
-	background-color: #161616;
+	background-color: #101010;
 	color: #f2f2f2;
-	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
-		'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-family: 'Montserrat';
 	font-size: 1.8rem;
 	line-height: 1.5;
 }
@@ -52,16 +59,6 @@ h5,
 h6 {
 	overflow-wrap: break-word;
 }
-
-// h1,
-// h2,
-// h3,
-// h4,
-// button,
-// input,
-// label {
-// 	line-height: 1.1;
-// }
 
 ul {
 	list-style: none;
