@@ -1,0 +1,28 @@
+.wrapper {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.primary-text,
+.primary-text-hover:hover {
+  background: var(--primary-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 0.2s;
+}
+
+.primary-link {
+  background-color: transparent;
+  background-image: var(--primary-color);
+  background-size: 0;
+  -o-border-image: var(--primary-color);
+     border-image: var(--primary-color);
+  border-image-slice: 1;
+  border-image-width: 5px;
+  text-align: center;
+  transition: all 0.1s;
+}
+.primary-link:hover {
+  background-size: 100%;
+}/*# sourceMappingURL=App.css.map */

@@ -1,61 +1,29 @@
 .wrapper {
-	max-width: 1200px;
+	max-width: 1250px;
 	margin: 0 auto;
 }
 
-$primaryGradient: linear-gradient(
-	90deg,
-	rgba(110, 222, 245, 1) 0%,
-	rgba(105, 156, 243, 1) 50%,
-	rgba(100, 91, 240, 1) 100%
-);
-// linear-gradient(316deg, #f42b03 0%, #ffbe0bea 74%); red-orange
+.primary-text,
+.primary-text-hover:hover {
+	background: var(--primary-color);
+	background-clip: text;
+	-webkit-background-clip: text;
+	color: transparent;
+	transition: all 0.2s;
+}
 
-// div {
-// 	height: 100vh;
-// 	display: flex;
-// 	align-items: center;
-// 	justify-content: center;
-// 	flex-direction: column;
-// 	font-size: 120px;
+.primary-link {
+	background-color: transparent;
+	background-image: var(--primary-color);
+	background-size: 0;
+	// background-repeat-x: no-repeat;
+	border-image: var(--primary-color);
+	border-image-slice: 1;
+	border-image-width: 5px;
+	text-align: center;
+	transition: all 0.1s;
 
-// 	span {
-// 		// font-size: 120px;
-// 		background: $primaryGradient;
-// 		background-clip: text;
-// 		-webkit-background-clip: text;
-// 		color: transparent;
-// 	}
-
-// 	.bn31 {
-// 		background-image: $primaryGradient;
-// 		border-radius: 40px;
-
-// 		color: rgb(105, 156, 243);
-// 		font-size: 1.4em;
-// 		padding: 4px;
-// 		position: relative;
-// 		text-decoration: none;
-// 		z-index: 2;
-// 	  }
-
-// 	  .bn31:hover {
-// 		color: #fff;
-// 	  }
-
-// 	  .bn31 .bn31span {
-// 		display: flex;
-// 		justify-content: center;
-// 		align-items: center;
-// 		background: #222;
-// 		border-radius: 40px;
-// 		padding: .5em 1.5em;
-// 		height: 100%;
-// 		transition: all 0.5s;
-// 		width: 100%;
-// 	  }
-
-// 	  .bn31:hover .bn31span {
-// 		background: transparent;
-// 	  }
-// }
+	&:hover {
+		background-size: 100%;
+	}
+}

@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 5%;
+}
+.header__text {
+  font-size: 3rem;
+}
+.header__text-info {
+  margin-top: 0.3em;
+  font-size: 2.2rem;
+}
+.header__text-btn {
+  display: block;
+  margin: 0.5em auto 0;
+  padding: 1em;
+}
+.header__image {
+  height: 500px;
+  width: 500px;
+}/*# sourceMappingURL=Header.css.map */
