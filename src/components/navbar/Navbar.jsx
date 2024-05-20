@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import './Navbar.scss';
 
 // images
-import logo from '../../assets/images/bg-logo.png';
+import logo from '../../assets/images/logo.png';
 
 export default function Navbar() {
 	const navItems = [
@@ -17,8 +17,8 @@ export default function Navbar() {
 		<div className='nav-container'>
 			<nav className='nav wrapper'>
 				<div className='nav__logo'>
-					<h2 className='primary-text'>Bartosz.</h2>
-					{/* <img src={logo} alt='' className='nav__logo-image' /> */}
+					{/* <h2 className='primary-text'>Bartosz.</h2> */}
+					<img src={logo} alt='' className='nav__logo-image' />
 				</div>
 				<ul className='nav__list'>
 					{navItems.map((item) => (
