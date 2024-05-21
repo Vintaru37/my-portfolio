@@ -1,5 +1,5 @@
 .wrapper {
-  max-width: 1250px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -12,17 +12,47 @@
   transition: all 0.2s;
 }
 
-.primary-link {
-  background-color: transparent;
+.primary-btn {
+  display: block;
+  width: 18em;
+  height: 60px;
+  margin-inline: auto;
+  padding: 2px;
   background-image: var(--primary-color);
-  background-size: 0;
-  -o-border-image: var(--primary-color);
-     border-image: var(--primary-color);
-  border-image-slice: 1;
-  border-image-width: 5px;
-  text-align: center;
-  transition: all 0.1s;
+  border-radius: 40px;
+  color: var(--secondary-color);
 }
-.primary-link:hover {
-  background-size: 100%;
+.primary-btn:hover {
+  color: #f2f2f2;
+}
+.primary-btn span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: rgb(12, 12, 12);
+  border-radius: 40px;
+  font-weight: 500;
+  transition: all 0.4s;
+}
+.primary-btn:hover span {
+  background: transparent;
+}
+
+.section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  display: inline-block;
+  margin: 2em auto 0.8em;
+  text-align: center;
+  font-size: 4.2rem;
+  font-weight: 400;
+  text-align: center;
+  border-bottom: 3px solid;
+  -o-border-image: var(--primary-color) 1;
+     border-image: var(--primary-color) 1;
 }/*# sourceMappingURL=App.css.map */

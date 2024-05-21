@@ -9,7 +9,8 @@ import logo from '../../assets/images/logo.png';
 export default function Navbar() {
 	const navItems = [
 		{ to: '/', text: 'Home' },
-		{ to: '/9', text: 'About' },
+		{ to: '/sa', text: 'About' },
+		{ to: '/9', text: 'Services' },
 		{ to: '/9', text: 'Portfolio' },
 		{ to: '/9', text: 'Contact' },
 	];

@@ -5,8 +5,8 @@
 		gap: 1.5em;
 
 		&-img {
-			max-height: 420px;
-			width: 18em;
+			max-height: 465px;
+			// width: 20em;
 			border-radius: 12px;
 		}
 
@@ -58,7 +58,7 @@
 						background-clip: text;
 						-webkit-background-clip: text;
 						color: transparent;
-						font-weight: 500;
+						font-weight: bold;
 					}
 
 					&:first-of-type {
