@@ -3,12 +3,12 @@
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 1000;
 }
 .nav-container .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
 }
 .nav-container .nav__logo {
   padding-block: 0.2em;
