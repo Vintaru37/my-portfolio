@@ -1,18 +1,22 @@
 .nav-container {
-  background-color: rgb(12, 12, 12);
-}
-.nav-container .nav {
+  background-color: rgba(12, 12, 12, 0.9);
   position: sticky;
   top: 0;
   width: 100%;
+  z-index: 1000;
+}
+.nav-container .nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 1000;
 }
 .nav-container .nav__logo {
   padding-block: 0.2em;
   font-size: 3.4rem;
+}
+.nav-container .nav__logo-image {
+  width: 5.5em;
+  padding: 0.2em;
 }
 .nav-container .nav__list {
   display: flex;

@@ -16,7 +16,7 @@ export default function About() {
 				'Logic games',
 				"I'm passionate about playing games that challenge my strategic thinking and problem-solving skills",
 				'Physical activities',
-				'From walking to weight training, physical activity is one of my favorite activities',
+				'From walking to weight training, physical activity plays a big role in my life',
 			],
 		},
 		{
@@ -44,7 +44,7 @@ export default function About() {
 	};
 
 	return (
-		<section className='about wrapper section-container'>
+		<section id='aboutme' className='about wrapper section-container'>
 			<h2 className='about__title section-title'>About Me</h2>
 			<div className='about__content'>
 				<img

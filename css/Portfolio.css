@@ -1,0 +1,67 @@
+.portfolio__projects {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 2em;
+}
+.portfolio__projects-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+.portfolio__projects-item-img {
+  opacity: 0.9;
+  height: 600px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.portfolio__projects-item:hover {
+  scale: 1.05;
+}
+.portfolio__projects-item:hover .portfolio__projects-item-layer {
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
+}
+.portfolio__projects-item-layer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f2f2f2;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(110, 222, 245, 0.8), rgba(105, 156, 243, 0.85), rgba(100, 91, 240, 0.9));
+  border-radius: 15px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+.portfolio__projects-item-layer h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.portfolio__projects-item-layer p {
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+.portfolio__projects-item-layer a {
+  padding: 1.1em;
+  color: rgb(105, 156, 243);
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.portfolio__projects-item-layer a:hover {
+  scale: 1.2;
+}/*# sourceMappingURL=Portfolio.css.map */

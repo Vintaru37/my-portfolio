@@ -21,7 +21,7 @@ export default function Header() {
 				<p className='header__text-info'>
 					Building innovative solutions, one line of code at a time.
 				</p>
-				<a href='#' className='header__text-btn primary-btn'>
+				<a href='#aboutme' className='header__text-btn primary-btn'>
 					<span>Get to know me</span>
 				</a>
 			</div>

@@ -10,10 +10,11 @@
 :root {
   --primary-color: linear-gradient(
   	90deg,
-  	rgba(110, 222, 245, 1) 0%,
-  	rgba(105, 156, 243, 1) 50%,
-  	rgba(100, 91, 240, 1) 100%
+  	rgb(110, 222, 245) 0%,
+  	rgb(105, 156, 243) 50%,
+  	rgb(100, 91, 240) 100%
   );
+  --secondary-color: rgb(105, 156, 243);
 }
 
 html {
@@ -26,8 +27,8 @@ html {
 
 body {
   min-height: 100vh;
-  background-color: #101010;
-  color: #f2f2f2;
+  background-color: rgb(12, 12, 12);
+  color: #dadada;
   font-family: "Montserrat";
   font-size: 1.8rem;
   line-height: 1.5;
@@ -47,16 +48,6 @@ button,
 textarea,
 select {
   font: inherit;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  overflow-wrap: break-word;
 }
 
 ul {
