@@ -1,0 +1,116 @@
+.contact {
+	&__content {
+		width: 100%;
+		display: grid;
+		grid-template-columns: 60% 40%;
+		place-content: center;
+		margin-top: 2em;
+		box-shadow: 0px 0px 15px rgb(105, 156, 243, 0.7);
+		border-radius: 15px;
+
+		&-form {
+			padding: 2.5em 2em 2em;
+			display: flex;
+			flex-direction: column;
+			gap: 1em;
+
+			& input,
+			textarea {
+				padding: 0.4em;
+				background-color: #262626;
+				color: #fff;
+				border: 2px solid transparent;
+				border-radius: 4px;
+
+				&:focus {
+					outline: none;
+					border-image: var(--primary-color);
+					border-image-slice: 1;
+				}
+			}
+
+			& textarea {
+				resize: vertical;
+				height: 200px;
+				max-height: 250px;
+			}
+
+			&-error {
+				text-align: center;
+				color: var(--secondary-color);
+				margin-top: -.5em;
+			}
+
+			&-btn {
+				height: 50px;
+				width: 15em;
+				font-size: 2rem;
+				border: none;
+			}
+		}
+
+		&-socials {
+			position: relative;
+			background-image: url('../../assets/images/contact-pic.jpg');
+			background-size: cover;
+			background-position: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 1em;
+			padding: 1.5em;
+			border-top-right-radius: 15px;
+			border-bottom-right-radius: 15px;
+			z-index: 1;
+
+			&::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				height: 100%;
+				width: 100%;
+				background-color: rgba(0, 0, 0, 0.8);
+				backdrop-filter: blur(4px);
+				border-top-right-radius: 15px;
+				border-bottom-right-radius: 15px;
+				z-index: -1;
+			}
+
+			&-title {
+				text-align: center;
+				font-size: 3.2rem;
+			}
+
+			& p {
+				font-size: 2.2rem;
+			}
+
+			&-item {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				gap: 1em;
+				width: 12em;
+				padding: 0.5em 0.8em;
+				border: solid 1px rgb(212, 212, 212);
+				border-radius: 10px;
+				transition: all 0.3s;
+
+				& svg {
+					flex-basis: 25%;
+					font-size: 3rem;
+				}
+
+				&:hover {
+					background: var(--primary-color);
+					background-size: 120% 120%;
+					opacity: 0.9;
+					border: 1px solid transparent;
+					font-weight: bold;
+					scale: 1.05;
+				}
+			}
+		}
+	}
+}

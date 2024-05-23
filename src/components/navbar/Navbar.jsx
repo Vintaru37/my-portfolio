@@ -1,5 +1,4 @@
-import { NavLink } from 'react-router-dom';
-
+import { Link } from 'react-scroll';
 // styles
 import './Navbar.scss';
 
@@ -8,27 +7,31 @@ import logo from '../../assets/images/logo.png';
 
 export default function Navbar() {
 	const navItems = [
-		{ to: '/', text: 'Home' },
-		{ to: '/sa', text: 'About' },
-		{ to: '/9', text: 'Services' },
-		{ to: '/9', text: 'Portfolio' },
-		{ to: '/9', text: 'Contact' },
+		{ to: 'home', text: 'Home', offset: -200 },
+		{ to: 'about', text: 'About', offset: 0 },
+		{ to: 'services', text: 'Services', offset: 0 },
+		{ to: 'portfolio', text: 'Portfolio', offset: 0 },
+		{ to: 'contact', text: 'Contact', offset: 0 },
 	];
+
 	return (
 		<div className='nav-container'>
 			<nav className='nav wrapper'>
-				<div className='nav__logo'>
-					{/* <h2 className='primary-text'>Bartosz.</h2> */}
-					<img src={logo} alt='' className='nav__logo-image' />
-				</div>
+				<Link offset={-200} to='home' className='nav__logo'>
+					<img src={logo} alt='Website logo' className='nav__logo-image' />
+				</Link>
 				<ul className='nav__list'>
 					{navItems.map((item) => (
 						<li key={item.text} className='nav__list-item'>
-							<NavLink
+							<Link
+								activeClass='active'
+								spy={true}
+								offset={item.offset}
+								duration={200}
 								className='nav__list-item-link primary-text-hover'
 								to={item.to}>
 								{item.text}
-							</NavLink>
+							</Link>
 						</li>
 					))}
 				</ul>

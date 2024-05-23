@@ -26,7 +26,7 @@ export default function Services() {
 	];
 
 	return (
-		<section className='wrapper services section-container'>
+		<section id='services' className='wrapper services section-container'>
 			<h2 className='services__title section-title'>My Services</h2>
 			<div className='services__boxes'>
 				{services.map((service, index) => (

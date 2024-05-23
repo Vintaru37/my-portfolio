@@ -3,6 +3,8 @@ import Header from '../components/header/Header';
 import About from '../components/about/About';
 import Services from '../components/services/Services';
 import Portfolio from '../components/portfolio/Portfolio'
+import Contact from '../components/contact/Contact'
+import Footer from '../components/footer/Footer';
 
 export default function PageLayout() {
 	return (
@@ -13,8 +15,9 @@ export default function PageLayout() {
 				<About />
 				<Services />
 				<Portfolio />
-				<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+				<Contact />
 			</main>
+			<Footer />
 		</>
 	);
 }
