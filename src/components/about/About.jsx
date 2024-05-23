@@ -14,9 +14,9 @@ export default function About() {
 			title: 'Interests',
 			items: [
 				'Logic games',
-				"I'm passionate about playing games that challenge my strategic thinking and problem-solving skills",
+				"I'm passionate about playing games that challenge my strategic thinking and problem-solving skills.",
 				'Physical activities',
-				'From walking to weight training, physical activity plays a big role in my life',
+				'From walking to weight training, physical activity plays a big role in my life.',
 			],
 		},
 		{
@@ -32,9 +32,9 @@ export default function About() {
 			title: 'Skills',
 			items: [
 				'Soft skills',
-				"I'm a communicative, self-disciplined team player with strong work organization skills and a high personal culture",
+				"I'm a communicative, self-disciplined team player with strong work organization skills and a high personal culture.",
 				'Hard skills',
-				'  I have a solid knowledge of HTML5, CSS, JavaScript and React.js. I am proficient in version control systems such as Git. Any website I create is fully responsive',
+				'  I have a solid knowledge of HTML5, CSS, JavaScript and React.js. I am proficient in version control systems such as Git. All websites I create are fully responsive and functional.',
 			],
 		},
 	];
@@ -44,7 +44,7 @@ export default function About() {
 	};
 
 	return (
-		<section id='aboutme' className='about wrapper section-container'>
+		<section id='about' className='about wrapper section-container'>
 			<h2 className='about__title section-title'>About Me</h2>
 			<div className='about__content'>
 				<img

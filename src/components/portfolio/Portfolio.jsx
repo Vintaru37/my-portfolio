@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom';
-
 // styles
 import './Portfolio.scss';
 
@@ -16,7 +14,7 @@ export default function Portfolio() {
 		{
 			title: 'HealThyBody - Calorie Counter',
 			description:
-				'HealThyBody is a calorie counter app that allows users to track their daily caloric intake.',
+				'HealThyBody is a calorie counter app that allows users to track their daily caloric intake. Project created in collaboration with Maciej Gortych.',
 			link: 'https://twogordev-first-app.onrender.com/',
 			image: CCImage,
 		},
@@ -36,11 +34,11 @@ export default function Portfolio() {
 		},
 	];
 	return (
-		<section className='portfolio wrapper section-container'>
+		<section id='portfolio' className='portfolio wrapper section-container'>
 			<h2 className='portfolio__title section-title'>Portfolio</h2>
 			<div className='portfolio__projects'>
-				{projects.map((project) => (
-					<div className='portfolio__projects-item'>
+				{projects.map((project, index) => (
+					<div key={index} className='portfolio__projects-item'>
 						<img
 							src={project.image}
 							alt='Portfolio project'
@@ -49,9 +47,9 @@ export default function Portfolio() {
 						<div className='portfolio__projects-item-layer'>
 							<h3>{project.title}</h3>
 							<p>{project.description}</p>
-							<Link to={project.link}>
+							<a href={project.link}>
 								<FaExternalLinkAlt />
-							</Link>
+							</a>
 						</div>
 					</div>
 				))}
