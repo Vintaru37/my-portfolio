@@ -2,7 +2,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
 	margin-top: 1em;
 
 	&__text {
@@ -20,6 +19,58 @@
 	&__image {
 		border-radius: 10em;
 		height: 820px;
-		// width: 500px;
+	}
+}
+
+@media (width <= 1200px) {
+	.header {
+		margin-inline: 2em 1em;
+	}
+}
+
+@media (width <= 992px) {
+	.header {
+		margin-inline: 1em;
+		text-align: center;
+		justify-content: center;
+		margin-top: 5em;
+	
+		&__image {
+			display: none;
+		}
+	}
+}
+
+@media (width <= 700px) {
+	.header {
+		&__text {
+			&-title {
+				font-size: 5rem;
+			}
+		}
+	}
+}
+
+@media (width <= 480px) {
+	.header {
+		&__text {
+			&-title {
+				font-size: 4.5rem;
+			}
+		}
+	}
+}
+
+@media (width <= 400px) {
+	.header {
+		&__text {
+			&-title {
+				font-size: 4rem;
+			}
+
+			&-info {
+				font-size: 2rem;
+			}
+		}
 	}
 }

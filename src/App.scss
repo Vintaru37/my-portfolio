@@ -14,7 +14,7 @@
 
 .primary-btn {
 	display: block;
-	width: 18em;
+	width: min(18em, 80vw);
 	height: 60px;
 	margin-inline: auto;
 	padding: 2px;

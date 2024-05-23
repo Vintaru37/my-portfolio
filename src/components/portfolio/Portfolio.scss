@@ -9,7 +9,6 @@
 			overflow: hidden;
 			border-radius: 15px;
 			transition: all 0.5s;
-			// max-width: 330px;
 
 			&-img {
 				opacity: 0.9;
@@ -75,6 +74,49 @@
 					&:hover {
 						scale: 1.2;
 					}
+				}
+			}
+		}
+	}
+}
+
+@media (width <= 992px) {
+	.portfolio {
+		&__projects {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 1em;
+
+			&-item {
+				&-img {
+					width: 100%;
+					opacity: 0.9;
+					height: 450px;
+				}
+			}
+		}
+	}
+}
+
+@media (width <= 620px) {
+	.portfolio {
+		&__projects {
+			display: grid;
+			place-content: center;
+			grid-template-columns: 1fr;
+			margin-inline: 1em;
+		}
+	}
+}
+
+@media (hover: none) {
+	.portfolio {
+		&__projects {
+			&-item {
+				&-layer {
+					opacity: 1;
+					visibility: visible;
+					height: 100%;
+
 				}
 			}
 		}
