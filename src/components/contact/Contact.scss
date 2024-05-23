@@ -1,6 +1,9 @@
 .contact {
+	&__subtitle {
+		text-align: center;
+	}
 	&__content {
-		width: 100%;
+		width: 90%;
 		display: grid;
 		grid-template-columns: 60% 40%;
 		place-content: center;
@@ -38,7 +41,7 @@
 			&-error {
 				text-align: center;
 				color: var(--secondary-color);
-				margin-top: -.5em;
+				margin-top: -0.5em;
 			}
 
 			&-btn {
@@ -71,7 +74,7 @@
 				height: 100%;
 				width: 100%;
 				background-color: rgba(0, 0, 0, 0.8);
-				backdrop-filter: blur(4px);
+				backdrop-filter: blur(2px);
 				border-top-right-radius: 15px;
 				border-bottom-right-radius: 15px;
 				z-index: -1;
@@ -79,7 +82,7 @@
 
 			&-title {
 				text-align: center;
-				font-size: 3.2rem;
+				font-size: clamp(2rem, 1.6rem + 1.333vi, 3.2rem);
 			}
 
 			& p {
@@ -109,6 +112,45 @@
 					border: 1px solid transparent;
 					font-weight: bold;
 					scale: 1.05;
+				}
+			}
+		}
+	}
+}
+
+@media (width <= 968px) {
+	.contact {
+		&__content {
+			grid-template-columns: 1fr;
+
+			&-socials {
+				border-top-right-radius: 0;
+				border-bottom-left-radius: 15px;
+	
+				&::before {
+					border-top-right-radius: 0;
+					border-bottom-left-radius: 15px;
+				}
+			}
+		}
+	}
+}
+
+@media (width <= 480px) {
+	.contact {
+		&__content {
+			&-form {
+				padding: 1em;
+
+				& input, textarea {
+					width: 90%;
+					align-self: center;
+				}
+
+				&-btn {
+					height: 40px;
+					width: 12em;
+					font-size: 1.8rem;
 				}
 			}
 		}

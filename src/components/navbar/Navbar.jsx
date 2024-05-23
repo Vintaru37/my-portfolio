@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import { Link } from 'react-scroll';
 // styles
 import './Navbar.scss';
@@ -13,6 +14,11 @@ export default function Navbar() {
 		{ to: 'portfolio', text: 'Portfolio', offset: 0 },
 		{ to: 'contact', text: 'Contact', offset: 0 },
 	];
+	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+	const toggleMobileMenu = () => {
+		setMobileMenuOpen(prevSt => !prevSt)
+	};
 
 	return (
 		<div className='nav-container'>
@@ -20,10 +26,19 @@ export default function Navbar() {
 				<Link offset={-200} to='home' className='nav__logo'>
 					<img src={logo} alt='Website logo' className='nav__logo-image' />
 				</Link>
-				<ul className='nav__list'>
+				<div
+					className={`nav__hamburger ${mobileMenuOpen? 'open' : ''}`}
+					onClick={toggleMobileMenu}
+				>
+					<div className='nav__hamburger-line'></div>
+					<div className='nav__hamburger-line'></div>
+					<div className='nav__hamburger-line'></div>
+				</div>
+				<ul className={`nav__list ${mobileMenuOpen? 'open' : ''}`}>
 					{navItems.map((item) => (
 						<li key={item.text} className='nav__list-item'>
 							<Link
+							onClick={() => setMobileMenuOpen(false)}
 								activeClass='active'
 								spy={true}
 								offset={item.offset}

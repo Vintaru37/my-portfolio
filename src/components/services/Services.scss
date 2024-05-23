@@ -64,3 +64,21 @@
 		}
 	}
 }
+
+
+@media (width <= 992px) {
+	.services {
+		&__boxes {
+			gap: 1em;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+}
+
+@media (width <= 620px) {
+	.services {
+		&__boxes {
+			grid-template-columns: 1fr;
+		}
+	}
+}
