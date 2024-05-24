@@ -1,0 +1,46 @@
+{
+	"navbar": {
+		"about": "O mnie",
+		"services": "Usługi",
+		"contact": "Kontakt"
+	},
+
+	"header": {
+		"greeting": "Cześć, nazywam się",
+		"greeting2": "",
+		"description": "Łączę technologię i kreatywność, aby urzeczywstnić Twoją wizję strony internetowej.",
+		"btnText": "Dowiedz się więcej"
+	},
+
+	"about": {
+		"title": "O mnie",
+		"description": "Jestem entuzjastą programowania z pasją do budowania pięknych, przyjaznych dla użytkownika interfejsów, które urzeczywistniają pomysły. Kiedy nie koduję, badam najnowsze trendy w projektowaniu, eksperymentuję z nowymi technologiami lub po prostu cieszę się pięknem dobrze wykonanej strony internetowej. Fascynuje mnie sposób, w jaki technologia może kształtować nasze codzienne doświadczenia i otwierać nowe drogi rozwoju.",
+
+		"intTitle": "Zainteresowania",
+		"intLineOne": "Gry logiczne",
+		"intLineOneInfo": "Pasjonuję się grami, które wymagają strategicznego myślenia i umiejętności rozwiązywania problemów.",
+		"intLineTwo": "Aktywność fizyczna",
+		"intLineTwoInfo": "Od spacerów po trening siłowy, aktywność fizyczna odgrywa dużą rolę w moim życiu.",
+
+		"eduTitle": "Wykształcenie",
+		"eduLineOneInfo": "Zespół Szkół im. ks. Stanisława Staszica w Tarnobrzegu - Technik Teleinformatyk",
+		"eduDateTwo": "2019 - Obecnie",
+		"eduLineTwoInfo": "Politechnika Rzeszowska im. Ignacego Łukasiewicza - Elektronika i Telekomunikacja",
+
+		"skillsTitle": "Umiejętności",
+		"skillsLineOne": "Umiejętności miękkie",
+		"skillsLineOneInfo": "Jestem komunikatywnym, zdyscyplinowanym graczem zespołowym z wysokimi umiejętnościami organizacji pracy i wysoką kulturą osobistą.",
+		"skillsLineTwo": "Umiejętności twarde",
+		"skillsLineTwoInfo": "Mam solidną wiedzę na temat HTML5, CSS, JavaScript i React.js. Jestem biegły w systemach kontroli wersji, takich jak Git. Wszystkie tworzone przeze mnie strony są w pełni responsywne i funkcjonalne."
+	},
+
+	"services": {
+		"title": "Usługi",
+		"serOneTitle": "Projektowanie stron",
+		"serOneDesc": "Atrakcyjne wizualnie strony internetowe dostosowane do potrzeb i celów biznesowych. Usługa obejmuje układ strony, kolorystykę, typografię i projekt graficzny.",
+		"serTwoTitle": "Konserwacja stron",
+		"serTwoDesc": "Ciągłe wsparcie i konserwacja w zakresie aktualizacji strony internetowej, zarządzania treścią i rozwiązywania problemów.",
+		"serThreeTitle": "Optymalizacja stron",
+		"serThreeDesc": "Optymalizacja szybkości, wydajności i pozycji w wyszukiwarkach poprzez kompresję obrazów, minifikację kodu, buforowanie i SEO."
+	}
+}

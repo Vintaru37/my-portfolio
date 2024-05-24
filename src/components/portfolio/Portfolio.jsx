@@ -40,7 +40,6 @@ export default function Portfolio() {
 				{projects.map((project, index) => (
 					<div key={index} className='portfolio__projects-item'>
 						<img
-						onClick="void(0)"
 							src={project.image}
 							alt='Portfolio project'
 							className='portfolio__projects-item-img'

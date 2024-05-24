@@ -1,0 +1,24 @@
+.lang-change-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 0.6em;
+	font-size: 1.5rem;
+	.lang-change-btn {
+		border: none;
+		background-color: transparent;
+		color: #f2f2f2;
+		cursor: pointer;
+		transition: all 0.2s;
+
+		&:hover {
+			color: var(--secondary-color);
+		}
+	}
+}
+
+@media (width <= 1350px) {
+	.lang-change-container {
+		display: none;
+	}
+}

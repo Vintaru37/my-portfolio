@@ -1,18 +1,26 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
+import { useTranslation } from 'react-i18next'
+
 // styles
 import './Navbar.scss';
 
 // images
 import logo from '../../assets/images/logo.png';
 
+// components
+import LanguageSelector from '../languageSelector/LanguageSelector';
+
 export default function Navbar() {
+	const { t } = useTranslation()
+	const { about, services, contact } = t("navbar")
+
 	const navItems = [
 		{ to: 'home', text: 'Home', offset: -200 },
-		{ to: 'about', text: 'About', offset: 0 },
-		{ to: 'services', text: 'Services', offset: 0 },
+		{ to: 'about', text: about, offset: 0 },
+		{ to: 'services', text: services, offset: 0 },
 		{ to: 'portfolio', text: 'Portfolio', offset: 0 },
-		{ to: 'contact', text: 'Contact', offset: 0 },
+		{ to: 'contact', text: contact, offset: 0 },
 	];
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -23,6 +31,7 @@ export default function Navbar() {
 	return (
 		<div className='nav-container'>
 			<nav className='nav wrapper'>
+				<LanguageSelector />
 				<Link offset={-200} to='home' className='nav__logo'>
 					<img src={logo} alt='Website logo' className='nav__logo-image' />
 				</Link>

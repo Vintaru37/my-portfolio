@@ -126,7 +126,7 @@
 			&-socials {
 				border-top-right-radius: 0;
 				border-bottom-left-radius: 15px;
-	
+
 				&::before {
 					border-top-right-radius: 0;
 					border-bottom-left-radius: 15px;
@@ -142,7 +142,8 @@
 			&-form {
 				padding: 1em;
 
-				& input, textarea {
+				& input,
+				textarea {
 					width: 90%;
 					align-self: center;
 				}
