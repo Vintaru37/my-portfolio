@@ -3,8 +3,10 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 1em;
+	// animation: fadeIn 1s;
 
 	&__text {
+		animation: slideIn 1s;
 		font-size: 3rem;
 		&-info {
 			margin-top: 0.3em;
@@ -17,8 +19,32 @@
 		}
 	}
 	&__image {
-		border-radius: 10em;
+		opacity: 0;
+		animation: fadeIn 2s forwards;
+		animation-delay: 0.8s;
 		height: 820px;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes slideIn {
+	from {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateX(0);
 	}
 }
 
@@ -34,7 +60,7 @@
 		text-align: center;
 		justify-content: center;
 		margin-top: 5em;
-	
+
 		&__image {
 			display: none;
 		}

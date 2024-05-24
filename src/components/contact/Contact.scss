@@ -118,6 +118,29 @@
 	}
 }
 
+// SCROLL ANIMATIONS
+.contact__content,
+.contact__subtitle {
+	opacity: 0;
+}
+
+.contact.in-view {
+	.contact__subtitle {
+		animation: fade-in 1s forwards;
+	}
+	.contact__content {
+		animation: fade-in 1s forwards;
+	}
+}
+.contact.out-view {
+	.contact__subtitle {
+		animation: fade-out 1s forwards;
+	}
+	.contact__content {
+		animation: fade-out 1s forwards;
+	}
+}
+
 @media (width <= 968px) {
 	.contact {
 		&__content {

@@ -11,6 +11,9 @@ import { FaFacebookSquare } from 'react-icons/fa';
 // emailJS
 import emailjs from '@emailjs/browser';
 
+// hooks
+import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+
 export default function Contact() {
 	const { t } = useTranslation();
 	const {
@@ -41,6 +44,8 @@ export default function Contact() {
 	const [wasSent, setWasSent] = useState(false);
 
 	const form = useRef();
+
+	const { ref, inView } = useIntersectionObserver();
 
 	function handleChange(e) {
 		const { name, value } = e.target;
@@ -92,7 +97,12 @@ export default function Contact() {
 	};
 
 	return (
-		<section id='contact' className='contact wrapper section-container'>
+		<section
+			ref={ref}
+			id='contact'
+			className={`contact wrapper section-container ${
+				inView ? 'in-view' : 'out-view'
+			}`}>
 			<h2 className='contact__title section-title'>{title}</h2>
 			<p className='contact__subtitle'>{subtitle}</p>
 			<div className='contact__content'>

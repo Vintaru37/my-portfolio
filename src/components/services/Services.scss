@@ -24,7 +24,7 @@
 					rgb(100, 91, 240, 0.85) 100%
 				);
 				background-position: 0% 0%;
-				background-size: 300% 300%;
+				background-size: 400% 400%;
 				content: '';
 				position: absolute;
 				height: 100%;
@@ -32,7 +32,7 @@
 				left: 0px;
 				pointer-events: none;
 				border-radius: 15px;
-				transition: all 0.5s ease;
+				transition: all 0.7s ease;
 				width: 100%;
 				z-index: -1;
 			}
@@ -61,6 +61,38 @@
 				text-align: justify;
 				hyphens: auto;
 			}
+		}
+	}
+}
+
+// SCROLL ANIMATIONS
+.services__boxes-box {
+	opacity: 0;
+}
+
+.services.in-view {
+	.services__boxes-box {
+		&:nth-child(1) {
+			animation: slide-from-left 1s forwards;
+		}
+		&:nth-child(2) {
+			animation: fade-in 1s forwards;
+		}
+		&:nth-child(3) {
+			animation: slide-from-right 1s forwards;
+		}
+	}
+}
+.services.out-view {
+	.services__boxes-box {
+		&:nth-child(1) {
+			animation: slide-to-left 1s forwards;
+		}
+		&:nth-child(2) {
+			animation: fade-out 1s forwards;
+		}
+		&:nth-child(3) {
+			animation: slide-to-right 1s forwards;
 		}
 	}
 }

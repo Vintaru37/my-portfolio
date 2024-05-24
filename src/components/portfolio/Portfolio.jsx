@@ -11,6 +11,9 @@ import CCImage from '../../assets/images/portfolio-img-1.png';
 import ForestImage from '../../assets/images/portfolio-img-2.png';
 import QuizzicalImage from '../../assets/images/portfolio-img-3.png';
 
+// hooks
+import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+
 export default function Portfolio() {
 	const { t } = useTranslation();
 	const {
@@ -21,6 +24,7 @@ export default function Portfolio() {
 		proThreeTitle,
 		proThreeDesc,
 	} = t('portfolio');
+
 	const projects = [
 		{
 			title: proOneTitle,
@@ -41,8 +45,10 @@ export default function Portfolio() {
 			image: QuizzicalImage,
 		},
 	];
+
+	const { ref, inView } = useIntersectionObserver();
 	return (
-		<section id='portfolio' className='portfolio wrapper section-container'>
+		<section ref={ref} id='portfolio' className={`portfolio wrapper section-container ${inView ? 'in-view' : 'out-view'}`}>
 			<h2 className='portfolio__title section-title'>Portfolio</h2>
 			<div className='portfolio__projects'>
 				{projects.map((project, index) => (

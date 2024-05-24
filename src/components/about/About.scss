@@ -79,6 +79,34 @@
 	}
 }
 
+// SCROLL ANIMATIONS
+
+.about__content-img,
+.about__content-info {
+	opacity: 0;
+}
+.about.in-view{
+	.about__content-img {
+		animation: fade-in 1.2s forwards;
+	}
+
+	.about__content-info {
+		animation: slide-from-right 1.2s forwards;
+	}
+}
+
+.about.out-view{
+	.about__content-img {
+		animation: fade-out 1.2s forwards;
+	}
+
+	.about__content-info {
+		animation: slide-to-right 1.2s forwards;
+	}
+}
+
+
+
 @media (width <= 968px) {
 	.about {
 		&__content {

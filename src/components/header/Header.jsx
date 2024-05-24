@@ -29,7 +29,7 @@ export default function Header() {
 					<span>{btnText}</span>
 				</Link>
 			</div>
-			<img src={headerImage} className='header__image'></img>
+			<img src={headerImage} alt='Author photo' className='header__image'></img>
 		</header>
 	);
 }
