@@ -7,10 +7,14 @@ import { FaCode } from 'react-icons/fa';
 import { HiMiniWrenchScrewdriver } from 'react-icons/hi2';
 import { SlSpeedometer } from 'react-icons/sl';
 
+// hooks
+import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+
 export default function Services() {
 	const { t } = useTranslation();
 	const ser = t("services")
-	
+	const { ref, inView } = useIntersectionObserver();
+
 	const services = [
 		{
 			icon: FaCode,
@@ -30,7 +34,7 @@ export default function Services() {
 	];
 
 	return (
-		<section id='services' className='wrapper services section-container'>
+		<section ref={ref} id='services' className={`services wrapper section-container ${inView ? 'in-view' : 'out-view'}`}>
 			<h2 className='services__title section-title'>{ser.title}</h2>
 			<div className='services__boxes'>
 				{services.map((service, index) => (
