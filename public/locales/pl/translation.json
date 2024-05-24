@@ -36,11 +36,32 @@
 
 	"services": {
 		"title": "Usługi",
-		"serOneTitle": "Projektowanie stron",
+		"serOneTitle": "Projektowanie",
 		"serOneDesc": "Atrakcyjne wizualnie strony internetowe dostosowane do potrzeb i celów biznesowych. Usługa obejmuje układ strony, kolorystykę, typografię i projekt graficzny.",
-		"serTwoTitle": "Konserwacja stron",
+		"serTwoTitle": "Konserwacja",
 		"serTwoDesc": "Ciągłe wsparcie i konserwacja w zakresie aktualizacji strony internetowej, zarządzania treścią i rozwiązywania problemów.",
-		"serThreeTitle": "Optymalizacja stron",
+		"serThreeTitle": "Optymalizacja",
 		"serThreeDesc": "Optymalizacja szybkości, wydajności i pozycji w wyszukiwarkach poprzez kompresję obrazów, minifikację kodu, buforowanie i SEO."
+	},
+
+	"portfolio": {
+		"proOneTitle": "HealThyBody - Licznik kalorii",
+		"proOneDesc": "HealThyBody to aplikacja do liczenia kalorii, która pozwala użytkownikom śledzić dzienne spożycie kalorii. Projekt stworzony w ramach współpracy z Maciejem Gortychem.",
+		"proTwoTitle": "The Forest - Prywatny Park",
+		"proTwoDesc": "Forest jest przykładem tego, jak może wyglądać strona prywatnego parku. Jest to również jedna z pierwszych stron, które stworzyłem.",
+		"proThreeTitle": "Quizzical - Test wiedzy ogólnej",
+		"proThreeDesc": "Quizzical to aplikacja, która pozwala użytkownikom sprawdzić swoją wiedzę w różnych dziedzinach."
+	},
+	"contact": {
+		"title": "Kontakt",
+		"subtitle": "Jeśli masz jakieś pytania lub chciałbyś nawiązać współpracę, skontaktuj się ze mną!",
+		"sendInfo": "Wyślij wiadomość",
+		"or": "lub",
+		"socialMedia": "Daj znać na social media!",
+		"submitBtn": "Wyślij",
+		"wasMsgSent": "Wiadomość wysłana!",
+		"formNamePlc": "Twoje imię",
+		"formEmailPlc": "Twój adres email",
+		"formMessagePlc": "Wiadomość"
 	}
 }

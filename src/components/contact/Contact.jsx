@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { useState, useRef } from 'react';
 
 //styles
@@ -11,6 +12,20 @@ import { FaFacebookSquare } from 'react-icons/fa';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
+	const { t } = useTranslation();
+	const {
+		title,
+		subtitle,
+		sendInfo,
+		or,
+		socialMedia,
+		submitBtn,
+		formNamePlc,
+		formEmailPlc,
+		formMessagePlc,
+		wasMsgSent,
+	} = t('contact');
+
 	const [errors, setErrors] = useState({
 		name: '',
 		email: '',
@@ -23,7 +38,7 @@ export default function Contact() {
 		message: '',
 	});
 
-	const [buttonText, setButtonText] = useState('Submit');
+	const [wasSent, setWasSent] = useState(false);
 
 	const form = useRef();
 
@@ -62,10 +77,10 @@ export default function Contact() {
 							email: '',
 							message: '',
 						});
-						setButtonText('Message Sent!');
+						setWasSent(true);
 						setTimeout(() => {
-							setButtonText('Submit');
-						}, 3000);
+							setWasSent(false);
+						}, 4000);
 					},
 					(error) => {
 						console.log('FAILED...', error.text);
@@ -78,11 +93,8 @@ export default function Contact() {
 
 	return (
 		<section id='contact' className='contact wrapper section-container'>
-			<h2 className='contact__title section-title'>Contact</h2>
-			<p className='contact__subtitle'>
-				If you have any questions or would like to collaborate, feel free to
-				reach out to me!
-			</p>
+			<h2 className='contact__title section-title'>{title}</h2>
+			<p className='contact__subtitle'>{subtitle}</p>
 			<div className='contact__content'>
 				<form className='contact__content-form' ref={form} onSubmit={sendEmail}>
 					<input
@@ -96,7 +108,7 @@ export default function Contact() {
 								: {}
 						}
 						type='text'
-						placeholder='Your Name'
+						placeholder={formNamePlc}
 						name='name'
 						value={formData.name}
 						onChange={handleChange}
@@ -115,7 +127,7 @@ export default function Contact() {
 								: {}
 						}
 						type='text'
-						placeholder='Your Email'
+						placeholder={formEmailPlc}
 						name='email'
 						value={formData.email}
 						onChange={handleChange}
@@ -133,7 +145,7 @@ export default function Contact() {
 								  }
 								: {}
 						}
-						placeholder='Message'
+						placeholder={formMessagePlc}
 						name='message'
 						value={formData.message}
 						onChange={handleChange}></textarea>
@@ -141,15 +153,13 @@ export default function Contact() {
 						<p className='contact__content-form-error'>{errors.message}</p>
 					)}
 					<button className='contact__content-form-btn primary-btn'>
-						<span>{buttonText}</span>
+						<span>{wasSent ? wasMsgSent : submitBtn}</span>
 					</button>
 				</form>
 				<div className='contact__content-socials'>
-					<h3 className='contact__content-socials-title'>Send me an email</h3>
-					<p>or</p>
-					<h3 className='contact__content-socials-title'>
-						Find me on social media!
-					</h3>
+					<h3 className='contact__content-socials-title'>{sendInfo}</h3>
+					<p>{or}</p>
+					<h3 className='contact__content-socials-title'>{socialMedia}</h3>
 					<a
 						href='https://www.facebook.com/bartosz.gortych.315inst'
 						className='contact__content-socials-item'>

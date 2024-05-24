@@ -42,5 +42,30 @@
 		"serTwoDesc": "Continuous support and maintenance for website updates, content management and troubleshooting.",
 		"serThreeTitle": "Web Optimization",
 		"serThreeDesc": "Website speed, performance, and search engine ranking optimization through image compression, code minification, caching and SEO."
-	}
+	},
+
+    "portfolio": {
+        "proOneTitle": "HealThyBody - Calorie Counter",
+        "proOneDesc": "HealThyBody is a calorie counter app that allows users to track their daily caloric intake. Project created in collaboration with Maciej Gortych.",
+        "proTwoTitle": "The Forest - Private Park",
+        "proTwoDesc": "The Forest is an example of what a private park website could look like. It is also one of the first websites I made.",
+        "proThreeTitle": "Quizzical - General Knowledge Test",
+        "proThreeDesc": "Quizzical is an application that allows users to test their knowledge on a variety of topics."
+        
+    },
+
+    "contact": {
+        "title": "Contact",
+        "subtitle": "If you have any questions or would like to collaborate, feel free to reach out to me!",
+        "sendInfo": "Send me an email",
+        "or": "or",
+        "socialMedia": "Find me on social media!",
+        "submitBtn": "Submit",
+        "wasMsgSent": "Message sent!",
+        "formNamePlc": "Your Name",
+        "formEmailPlc": "Your Email",
+        "formMessagePlc": "Message" 
+    }
+
+    
 }

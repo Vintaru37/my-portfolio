@@ -1,3 +1,5 @@
+import { useTranslation } from 'react-i18next';
+
 // styles
 import './Portfolio.scss';
 
@@ -10,25 +12,31 @@ import ForestImage from '../../assets/images/portfolio-img-2.png';
 import QuizzicalImage from '../../assets/images/portfolio-img-3.png';
 
 export default function Portfolio() {
+	const { t } = useTranslation();
+	const {
+		proOneTitle,
+		proOneDesc,
+		proTwoTitle,
+		proTwoDesc,
+		proThreeTitle,
+		proThreeDesc,
+	} = t('portfolio');
 	const projects = [
 		{
-			title: 'HealThyBody - Calorie Counter',
-			description:
-				'HealThyBody is a calorie counter app that allows users to track their daily caloric intake. Project created in collaboration with Maciej Gortych.',
+			title: proOneTitle,
+			description: proOneDesc,
 			link: 'https://twogordev-first-app.onrender.com/',
 			image: CCImage,
 		},
 		{
-			title: 'The Forest - Private Park',
-			description:
-				'The Forest is an example of what a private park website could look like. It is also one of the first websites I made.',
+			title: proTwoTitle,
+			description: proTwoDesc,
 			link: 'https://vintaru37.github.io/forest/',
 			image: ForestImage,
 		},
 		{
-			title: 'Quizzical - General Knowledge Test',
-			description:
-				'Quizzical is an application that allows users to test their knowledge on a variety of topics.',
+			title: proThreeTitle,
+			description: proThreeDesc,
 			link: 'https://vintaru37.github.io/quiz-app/',
 			image: QuizzicalImage,
 		},

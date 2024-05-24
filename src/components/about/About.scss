@@ -12,17 +12,13 @@
 		&-info {
 			text-align: justify;
 
-			// &-text {
-			// 	font-size: 1rem;
-			// }
-
 			&-data {
 				display: flex;
 				gap: 1.5em;
 
 				&-btn {
 					padding: 0.5em;
-					font-size: 2.4rem;
+					font-size: clamp(1.5rem, 1rem + 1.636vw, 2.4rem);
 					font-weight: 530;
 					border: none;
 					background: transparent;
@@ -164,14 +160,15 @@
 	}
 }
 
-@media (width <= 480px) {
+@media (width <= 700px) {
 	.about {
 		height: fit-content;
 		&__content {
 			font-size: 1.6rem;
 
-			&-info {	
+			&-info {
 				&-data {
+					gap: 0.5em;
 					&-btn {
 						font-size: 1.8rem;
 					}
@@ -179,15 +176,21 @@
 			}
 		}
 	}
+}
 
-	.data-active {
-		&::after {
-			content: '';
-			display: block;
-			height: 3px;
-			width: 100%;
-			background-image: var(--primary-color);
-			transition: all 0.3s;
+@media (width <= 480px) {
+	.about {
+		&__content {
+			&-info {
+				&-data {
+					flex-wrap: wrap;
+					row-gap: 0;
+					&-btn {
+						font-size: 1.8rem;
+						padding-left: 0;
+					}
+				}
+			}
 		}
 	}
 }
