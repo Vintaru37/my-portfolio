@@ -1,4 +1,5 @@
 //styles
+import { useTranslation } from 'react-i18next';
 import './Services.scss';
 
 // icons
@@ -7,27 +8,30 @@ import { HiMiniWrenchScrewdriver } from 'react-icons/hi2';
 import { SlSpeedometer } from 'react-icons/sl';
 
 export default function Services() {
+	const { t } = useTranslation();
+	const ser = t("services")
+	
 	const services = [
 		{
 			icon: FaCode,
-			title: 'Web Design',
-			text: 'Visually appealing, user-friendly websites tailored to business needs and goals. Service includes layout, color scheme, typography and imagery design.',
+			title: ser.serOneTitle,
+			text: ser.serOneDesc,
 		},
 		{
 			icon: HiMiniWrenchScrewdriver,
-			title: 'Web Maintenance',
-			text: 'Continuous support and maintenance for website updates, content management and troubleshooting.',
+			title: ser.serTwoTitle,
+			text: ser.serTwoDesc,
 		},
 		{
 			icon: SlSpeedometer,
-			title: 'Web Optimization',
-			text: 'Website speed, performance, and search engine ranking optimization through image compression, code minification, caching and SEO.',
+			title: ser.serThreeTitle,
+			text: ser.serThreeDesc,
 		},
 	];
 
 	return (
 		<section id='services' className='wrapper services section-container'>
-			<h2 className='services__title section-title'>My Services</h2>
+			<h2 className='services__title section-title'>{ser.title}</h2>
 			<div className='services__boxes'>
 				{services.map((service, index) => (
 					<div key={index} className='services__boxes-box'>

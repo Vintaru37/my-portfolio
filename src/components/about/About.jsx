@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next'
 
 // styles
 import './About.scss';
@@ -7,34 +8,37 @@ import './About.scss';
 import aboutImg from '../../assets/images/img.png';
 
 export default function About() {
-	const [activeButton, setActiveButton] = useState('Interests');
+	const { t } = useTranslation();
+	const about = t("about");
+	const [activeButton, setActiveButton] = useState(about.intTitle);
+
 
 	const data = [
 		{
-			title: 'Interests',
+			title: about.intTitle,
 			items: [
-				'Logic games',
-				"I'm passionate about playing games that challenge my strategic thinking and problem-solving skills.",
-				'Physical activities',
-				'From walking to weight training, physical activity plays a big role in my life.',
+				about.intLineOne,
+				about.intLineOneInfo,
+				about.intLineTwo,
+				about.intLineTwoInfo,
 			],
 		},
 		{
-			title: 'Education',
+			title: about.eduTitle,
 			items: [
 				'2015 - 2019',
-				'Rev. St. Staszic School Complex in Tarnobrzeg - ICT Technician',
-				'2019 - Present',
-				'Rzeszów University of Technology - Electronics & Telecommunications',
+				about.eduLineOneInfo,
+				about.eduDateTwo,
+				about.eduLineTwoInfo,
 			],
 		},
 		{
-			title: 'Skills',
+			title: about.skillsTitle,
 			items: [
-				'Soft skills',
-				"I'm a communicative, self-disciplined team player with strong work organization skills and a high personal culture.",
-				'Hard skills',
-				'  I have a solid knowledge of HTML5, CSS, JavaScript and React.js. I am proficient in version control systems such as Git. All websites I create are fully responsive and functional.',
+				about.skillsLineOne,
+				about.skillsLineOneInfo,
+				about.skillsLineTwo,
+				about.skillsLineTwoInfo,
 			],
 		},
 	];
@@ -45,7 +49,7 @@ export default function About() {
 
 	return (
 		<section id='about' className='about wrapper section-container'>
-			<h2 className='about__title section-title'>About Me</h2>
+			<h2 className='about__title section-title'>{about.title}</h2>
 			<div className='about__content'>
 				<img
 					src={aboutImg}
@@ -54,12 +58,7 @@ export default function About() {
 				/>
 				<div className='about__content-info'>
 					<p className='about__content-info-text'>
-						I'm a creative problem-solver with a passion for building beautiful,
-						user-friendly interfaces that bring ideas to life. When I'm not
-						coding, you can find me exploring the latest design trends,
-						experimenting with new technologies or simply enjoying the beauty of
-						a well-crafted website. I'm fascinated by the way technology can
-						shape our daily experiences and open new ways for growth.
+						{about.description}
 					</p>
 					<div className='about__content-info-data'>
 						{data.map((item) => (
