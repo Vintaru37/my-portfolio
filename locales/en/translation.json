@@ -1,0 +1,75 @@
+{
+	"navbar": {
+		"about": "About",
+		"services": "Services",
+		"contact": "Contact"
+	},
+
+	"header": {
+		"greeting": "Hi, I'm",
+		"greeting2": "from Poland",
+		"description": "Where technology and creativity converge, to bring your vision to life.",
+		"btnText": "Learn more"
+	},
+
+	"about": {
+		"title": "About Me",
+		"description": "I'm a creative problem-solver with a passion for building beautiful, user-friendly interfaces that bring ideas to life. When I'm not coding, you can find me exploring the latest design trends, experimenting with new technologies or simply enjoying the beauty of a well-crafted website. I'm fascinated by the way technology can shape our daily experiences and open new ways for growth.",
+
+		"intTitle": "Interests",
+		"intLineOne": "Logic games",
+		"intLineOneInfo": "I'm passionate about playing games that challenge my strategic thinking and problem-solving skills.",
+		"intLineTwo": "Physical activities",
+		"intLineTwoInfo": "From walking to weight training, physical activity plays a big role in my life.",
+
+		"eduTitle": "Education",
+		"eduLineOneInfo": "Rev. St. Staszic School Complex in Tarnobrzeg - ICT Technician",
+		"eduDateTwo": "2019 - Present",
+		"eduLineTwoInfo": "Rzeszów University of Technology - Electronics & Telecommunications",
+
+		"skillsTitle": "Skills",
+		"skillsLineOne": "Soft skills",
+		"skillsLineOneInfo": "I'm a communicative, self-disciplined team player with strong work organization skills and a high personal culture.",
+		"skillsLineTwo": "Hard skills",
+		"skillsLineTwoInfo": "I have a solid knowledge of HTML5, CSS, JavaScript and React.js. I am proficient in version control systems such as Git. All websites I create are fully responsive and functional."
+	},
+
+	"services": {
+		"title": "Services",
+		"serOneTitle": "Web Design",
+		"serOneDesc": "Visually appealing, user-friendly websites tailored to business needs and goals. Service includes layout, color scheme, typography and imagery design.",
+		"serTwoTitle": "Web Maintenance",
+		"serTwoDesc": "Continuous support and maintenance for website updates, content management and troubleshooting.",
+		"serThreeTitle": "Web Optimization",
+		"serThreeDesc": "Website speed, performance, and search engine ranking optimization through image compression, code minification, caching and SEO."
+	},
+
+    "portfolio": {
+        "proOneTitle": "HealThyBody - Calorie Counter",
+        "proOneDesc": "HealThyBody is a calorie counter app that allows users to track their daily caloric intake. Project created in collaboration with Maciej Gortych.",
+        "proTwoTitle": "The Forest - Private Park",
+        "proTwoDesc": "The Forest is an example of what a private park website could look like. It is also one of the first websites I made.",
+        "proThreeTitle": "Quizzical - General Knowledge Test",
+        "proThreeDesc": "Quizzical is an application that allows users to test their knowledge on a variety of topics."
+        
+    },
+
+    "contact": {
+        "title": "Contact",
+        "subtitle": "If you have any questions or would like to collaborate, feel free to reach out to me!",
+        "sendInfo": "Send me an email",
+        "or": "or",
+        "socialMedia": "Find me on social media!",
+        "submitBtn": "Submit",
+        "wasMsgSent": "Message sent!",
+        "formNamePlc": "Your Name",
+        "formEmailPlc": "Your Email",
+        "formMessagePlc": "Message",
+		"nameReq": "Name is required",
+		"emailReq": "Email is required",
+		"emailFormat": "Email is invalid",
+		"msgReq": "Message is required" 
+    }
+
+    
+}
