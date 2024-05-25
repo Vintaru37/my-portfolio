@@ -8,8 +8,15 @@ i18n
 	.use(initReactI18next)
     .use(Backend)
 	.init({
-		// debug: true,
+		debug: true,
 		lng: 'pl',
         fallbackLng: 'pl',
         returnObjects: true,
+		interpolation: {
+			escapeValue: false
+		},
+		backend: {
+			loadPath: '/my-portfolio/locales/{{lng}}/translation.json'
+		}
+
 	});
