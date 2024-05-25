@@ -3,6 +3,10 @@
 		margin-bottom: 1em;
 	}
 
+	&__subtitle {
+		text-align: center;
+	}
+
 	&__boxes {
 		display: grid;
 		gap: 1.8em;
@@ -32,7 +36,7 @@
 				left: 0px;
 				pointer-events: none;
 				border-radius: 15px;
-				transition: all .8s;
+				transition: all 0.8s;
 				width: 100%;
 				z-index: -1;
 			}
@@ -66,11 +70,16 @@
 }
 
 // SCROLL ANIMATIONS
-.services__boxes-box {
+.services__boxes-box,
+.services__subtitle {
 	opacity: 0;
 }
 
 .services.in-view {
+	.services__subtitle {
+		animation: fade-in 1s forwards;
+	}
+
 	.services__boxes-box {
 		&:nth-child(1) {
 			animation: slide-from-left 1s forwards;
@@ -84,6 +93,10 @@
 	}
 }
 .services.out-view {
+	.services__subtitle {
+		animation: fade-out 1s forwards;
+	}
+
 	.services__boxes-box {
 		&:nth-child(1) {
 			animation: slide-to-left 1s forwards;
@@ -96,7 +109,6 @@
 		}
 	}
 }
-
 
 @media (width <= 992px) {
 	.services {
