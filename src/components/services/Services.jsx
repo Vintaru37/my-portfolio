@@ -14,7 +14,7 @@ export default function Services() {
 	const { t } = useTranslation();
 	const ser = t("services")
 	const { ref, inView } = useIntersectionObserver();
-
+console.log(ser);
 	const services = [
 		{
 			icon: FaCode,
@@ -36,6 +36,7 @@ export default function Services() {
 	return (
 		<section ref={ref} id='services' className={`services wrapper section-container ${inView ? 'in-view' : 'out-view'}`}>
 			<h2 className='services__title section-title'>{ser.title}</h2>
+			<p className='services__subtitle'>{ser.subtitle}</p>
 			<div className='services__boxes'>
 				{services.map((service, index) => (
 					<div key={index} className='services__boxes-box'>
