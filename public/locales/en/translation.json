@@ -64,7 +64,11 @@
         "wasMsgSent": "Message sent!",
         "formNamePlc": "Your Name",
         "formEmailPlc": "Your Email",
-        "formMessagePlc": "Message" 
+        "formMessagePlc": "Message",
+		"nameReq": "Name is required",
+		"emailReq": "Email is required",
+		"emailFormat": "Email is invalid",
+		"msgReq": "Message is required" 
     }
 
     

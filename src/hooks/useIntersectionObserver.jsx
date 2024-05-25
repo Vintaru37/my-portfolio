@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 
-const useIntersectionObserver = (options = { threshold: 0.60 }) => {
+const useIntersectionObserver = (options = { threshold: 0.70 }) => {
     const [inView, setInView] = useState(false);
     const ref = useRef(null);
   

@@ -27,6 +27,10 @@ export default function Contact() {
 		formEmailPlc,
 		formMessagePlc,
 		wasMsgSent,
+		nameReq,
+		emailReq,
+		emailFormat,
+		msgReq
 	} = t('contact');
 
 	const [errors, setErrors] = useState({
@@ -45,7 +49,7 @@ export default function Contact() {
 
 	const form = useRef();
 
-	const { ref, inView } = useIntersectionObserver();
+	const { ref, inView } = useIntersectionObserver({threshold: 0.45});
 
 	function handleChange(e) {
 		const { name, value } = e.target;
@@ -61,13 +65,13 @@ export default function Contact() {
 		e.preventDefault();
 		const validate = {};
 
-		if (!formData.name) validate.name = 'Name is required';
-		if (!formData.email) validate.email = 'Email is required';
+		if (!formData.name) validate.name = nameReq;
+		if (!formData.email) validate.email = emailReq;
 		else {
 			const emailRegex = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
-			if (!emailRegex.test(formData.email)) validate.email = 'Email is invalid';
+			if (!emailRegex.test(formData.email)) validate.email = emailFormat;
 		}
-		if (!formData.message) validate.message = 'Message is required';
+		if (!formData.message) validate.message = msgReq;
 
 		if (Object.values(validate).length === 0) {
 			setErrors({});

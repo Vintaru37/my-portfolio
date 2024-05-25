@@ -62,6 +62,10 @@
 		"wasMsgSent": "Wiadomość wysłana!",
 		"formNamePlc": "Twoje imię",
 		"formEmailPlc": "Twój adres email",
-		"formMessagePlc": "Wiadomość"
+		"formMessagePlc": "Wiadomość",
+		"nameReq": "To pole jest wymagane",
+		"emailReq": "To pole jest wymagane",
+		"emailFormat": "Nieprawidłowy adres email",
+		"msgReq": "To pole jest wymagane"
 	}
 }

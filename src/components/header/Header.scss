@@ -3,10 +3,9 @@
 	justify-content: space-between;
 	align-items: center;
 	margin-top: 1em;
-	// animation: fadeIn 1s;
 
 	&__text {
-		animation: slideIn 1s;
+		animation: slideIn 1s forwards;
 		font-size: 3rem;
 		&-info {
 			margin-top: 0.3em;
@@ -20,8 +19,7 @@
 	}
 	&__image {
 		opacity: 0;
-		animation: fadeIn 2s forwards;
-		animation-delay: 0.8s;
+		animation: slide-from-right 1s forwards;
 		height: 820px;
 	}
 }
@@ -39,7 +37,7 @@
 @keyframes slideIn {
 	from {
 		opacity: 0;
-		transform: translateX(-100%);
+		transform: translateX(-30%);
 	}
 
 	to {
