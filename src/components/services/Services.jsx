@@ -14,7 +14,7 @@ export default function Services() {
 	const { t } = useTranslation();
 	const ser = t("services")
 	const { ref, inView } = useIntersectionObserver();
-console.log(ser);
+
 	const services = [
 		{
 			icon: FaCode,

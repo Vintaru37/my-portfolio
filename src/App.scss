@@ -73,6 +73,19 @@
 	}
 }
 
+@media (max-width: 1200px) {
+	* {
+	  animation: none!important;
+	  -webkit-animation: none!important;
+	  -moz-animation: none!important;
+	  -ms-animation: none!important;
+	  -o-animation: none!important;
+	  opacity: 1!important;
+	}
+
+	
+  }
+
 // KEYFRAMES
 
 @keyframes fade-in {

@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-scroll';
 
@@ -13,8 +13,29 @@ export default function Header() {
 	const { greeting, greeting2, description, btnText } = t('header');
 
 	const letters = 'abcdefghijklmnoprstuwxyz';
+	const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+	
+	let resizeTimer;
 
+	const handleResize = () => {
+		if (resizeTimer) {
+		  clearTimeout(resizeTimer);
+		}
+		resizeTimer = setTimeout(() => {
+		  setWindowWidth(window.innerWidth);
+		}, 500);
+	  };
+	  
+	  useEffect(() => {
+		window.addEventListener('resize', handleResize);
+		return () => window.removeEventListener('resize', handleResize);
+	  }, []);
+	  
 	useEffect(() => {
+		if (windowWidth <= 1200) {
+			return;
+		}
+
 		let interval = setInterval(() => {
 			const primaryText = document.querySelector('.primary-text');
 			if (primaryText) {
@@ -42,7 +63,8 @@ export default function Header() {
 				}, 30);
 			}
 		}, 50);
-	}, []);
+	}, [windowWidth]);
+
 	return (
 		<header id='home' className='header wrapper'>
 			<div className='header__text'>

@@ -19,6 +19,8 @@
 
 @media (width <= 1350px) {
 	.lang-change-container {
-		display: none;
+		position: fixed;
+		top: 95%;right: 1%;
 	}
 }
+
