@@ -48,7 +48,12 @@ export default function Portfolio() {
 
 	const { ref, inView } = useIntersectionObserver();
 	return (
-		<section ref={ref} id='portfolio' className={`portfolio wrapper section-container ${inView ? 'in-view' : 'out-view'}`}>
+		<section
+			ref={ref}
+			id='portfolio'
+			className={`portfolio wrapper section-container ${
+				inView ? 'in-view' : 'out-view'
+			}`}>
 			<h2 className='portfolio__title section-title'>Portfolio</h2>
 			<div className='portfolio__projects'>
 				{projects.map((project, index) => (
@@ -61,7 +66,7 @@ export default function Portfolio() {
 						<div className='portfolio__projects-item-layer'>
 							<h3>{project.title}</h3>
 							<p>{project.description}</p>
-							<a href={project.link}>
+							<a target='_blank' rel='noopener' href={project.link}>
 								<FaExternalLinkAlt />
 							</a>
 						</div>
