@@ -51,7 +51,7 @@ export default function Navbar() {
 								activeClass='active'
 								spy={true}
 								offset={item.offset}
-								duration={400}
+								duration={500}
 								className='nav__list-item-link primary-text-hover'
 								to={item.to}>
 								{item.text}
