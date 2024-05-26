@@ -1,10 +1,17 @@
 .services {
+	gap: .5em;
 	&__title {
-		margin-bottom: 1em;
+		margin-bottom: .3em;
 	}
 
 	&__subtitle {
 		text-align: center;
+		font-size: 2rem;
+	}
+
+	&__sub-info {
+		margin-bottom: 1.3em;
+		font-weight: bold;
 	}
 
 	&__boxes {
@@ -71,12 +78,14 @@
 
 // SCROLL ANIMATIONS
 .services__boxes-box,
-.services__subtitle {
+.services__subtitle
+, .services__sub-info 
+{
 	opacity: 0;
 }
 
 .services.in-view {
-	.services__subtitle {
+	.services__subtitle, .services__sub-info {
 		animation: fade-in 1s forwards;
 	}
 
@@ -93,7 +102,7 @@
 	}
 }
 .services.out-view {
-	.services__subtitle {
+	.services__subtitle, .services__sub-info {
 		animation: fade-out 1s forwards;
 	}
 

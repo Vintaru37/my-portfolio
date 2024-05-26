@@ -37,6 +37,7 @@ console.log(ser);
 		<section ref={ref} id='services' className={`services wrapper section-container ${inView ? 'in-view' : 'out-view'}`}>
 			<h2 className='services__title section-title'>{ser.title}</h2>
 			<p className='services__subtitle'>{ser.subtitle}</p>
+			<p className='services__sub-info'>{ser.subtitleInfo}</p>
 			<div className='services__boxes'>
 				{services.map((service, index) => (
 					<div key={index} className='services__boxes-box'>
