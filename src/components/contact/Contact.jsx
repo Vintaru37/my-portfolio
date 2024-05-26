@@ -177,7 +177,7 @@ export default function Contact() {
 					<a
 						target='_blank'
 						rel='noopener'
-						href='https://www.facebook.com/bartosz.gortych.315inst'
+						href='https://www.facebook.com/bartosz.gortych.315/'
 						className='contact__content-socials-item'>
 						<FaFacebookSquare /> Facebook
 					</a>
