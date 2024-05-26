@@ -36,6 +36,8 @@
 
 	"services": {
 		"title": "Services",
+		"subtitle": "I'm crafting elegant and efficient solutions tailored to your specific needs.",
+		"subtitleInfo": " All services are related to web development.",
 		"serOneTitle": "Web Design",
 		"serOneDesc": "Visually appealing, user-friendly websites tailored to business needs and goals. Service includes layout, color scheme, typography and imagery design.",
 		"serTwoTitle": "Web Maintenance",
