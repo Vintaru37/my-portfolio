@@ -36,6 +36,8 @@
 
 	"services": {
 		"title": "Usługi",
+		"subtitle": "Tworzę estetyczne i wydajne rozwiązania dostosowane do Twoich potrzeb.",
+		"subtitleInfo": "Wszystkie usługi są związane z tworzeniem stron internetowych.",
 		"serOneTitle": "Projektowanie",
 		"serOneDesc": "Atrakcyjne wizualnie strony internetowe dostosowane do potrzeb i celów biznesowych. Usługa obejmuje układ strony, kolorystykę, typografię i projekt graficzny.",
 		"serTwoTitle": "Konserwacja",
@@ -54,7 +56,7 @@
 	},
 	"contact": {
 		"title": "Kontakt",
-		"subtitle": "Jeśli masz jakieś pytania lub chciałbyś nawiązać współpracę, skontaktuj się ze mną!",
+		"subtitle": "Jeśli masz jakieś pytania lub chciał(a)byś nawiązać współpracę, skontaktuj się ze mną!",
 		"sendInfo": "Wyślij wiadomość",
 		"or": "lub",
 		"socialMedia": "Daj znać na social media!",
