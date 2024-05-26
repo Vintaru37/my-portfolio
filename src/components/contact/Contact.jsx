@@ -30,7 +30,7 @@ export default function Contact() {
 		nameReq,
 		emailReq,
 		emailFormat,
-		msgReq
+		msgReq,
 	} = t('contact');
 
 	const [errors, setErrors] = useState({
@@ -49,7 +49,7 @@ export default function Contact() {
 
 	const form = useRef();
 
-	const { ref, inView } = useIntersectionObserver({threshold: 0.45});
+	const { ref, inView } = useIntersectionObserver({ threshold: 0.45 });
 
 	function handleChange(e) {
 		const { name, value } = e.target;
@@ -175,16 +175,22 @@ export default function Contact() {
 					<p>{or}</p>
 					<h3 className='contact__content-socials-title'>{socialMedia}</h3>
 					<a
+						target='_blank'
+						rel='noopener'
 						href='https://www.facebook.com/bartosz.gortych.315inst'
 						className='contact__content-socials-item'>
 						<FaFacebookSquare /> Facebook
 					</a>
 					<a
+						target='_blank'
+						rel='noopener'
 						href='https://www.linkedin.com/in/bartosz-gortych-944a592b7/'
 						className='contact__content-socials-item'>
 						<FaLinkedin /> LinkedIn
 					</a>
 					<a
+						target='_blank'
+						rel='noopener'
 						href='https://www.instagram.com/bartosz_gortych/'
 						className='contact__content-socials-item'>
 						<FaSquareInstagram /> Instagram
