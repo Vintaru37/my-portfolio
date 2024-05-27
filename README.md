@@ -2,9 +2,9 @@
 
 The website reflects my way of looking at web design. It was created using HTML, CSS/SASS, JavaScript, React. You can check out the live version [here](https://vintaru37.github.io/my-portfolio/).
 
----
 
-<p style="font-size: 22px; font-weight:bold;">Features</p>
+
+# Features
 
 **Responsive design:** The website is optimized for all devices, including desktops, tablets, and mobile phones.
 
@@ -14,17 +14,16 @@ The website reflects my way of looking at web design. It was created using HTML,
 
 **Social media links:** Connect with me on LinkedIn, Facebook and Instagram.
 
----
 
-<p style="font-size: 22px; font-weight:bold;">Images</p>
+# Images
 
-![alt text](image-3.png)
+![](image-3.png)
 
 ![](image-1.png)
 
----
 
-<p style="font-size: 22px; font-weight:bold;">Contact</p>
+
+# Contact
 
 Feel free to contact me through the contact form on the website or through my social media links. I am always open to new opportunities and collaborations.
 
