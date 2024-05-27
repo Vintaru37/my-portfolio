@@ -136,3 +136,9 @@
 		}
 	}
 }
+
+@media (width <= 480px) {
+	.services__boxes-box:hover {
+		scale: 1.05;
+	}
+}
