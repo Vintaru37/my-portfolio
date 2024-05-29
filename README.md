@@ -14,11 +14,11 @@ The website reflects my way of looking at web design. It was created using HTML,
 
 # Images
 
-![](image-3.png)
+![](./src/assets/images/markdown/image-3.png)
 
-![](image-5.png)
+![](./src/assets/images/markdown/image-5.png)
 
-![](image-4.png)
+![](./src/assets/images/markdown/image-4.png)
 
 # Contact
 
