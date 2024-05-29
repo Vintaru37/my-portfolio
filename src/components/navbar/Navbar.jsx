@@ -17,7 +17,7 @@ export default function Navbar() {
 
 	const navItems = [
 		{ to: 'home', text: 'Home', offset: -200 },
-		{ to: 'about', text: about, offset: -150 },
+		{ to: 'about', text: about, offset: -100 },
 		{ to: 'services', text: services, offset: -100 },
 		{ to: 'portfolio', text: 'Portfolio', offset: -100 },
 		{ to: 'contact', text: contact, offset: -100 },
