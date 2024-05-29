@@ -16,7 +16,7 @@ export default function Navbar() {
 	const { about, services, contact } = t('navbar');
 
 	const navItems = [
-		{ to: 'home', text: 'Home', offset: -150 },
+		{ to: 'home', text: 'Home', offset: -200 },
 		{ to: 'about', text: about, offset: -100 },
 		{ to: 'services', text: services, offset: -100 },
 		{ to: 'portfolio', text: 'Portfolio', offset: -100 },
