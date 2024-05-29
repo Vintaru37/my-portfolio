@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-scroll';
-import { useTranslation } from 'react-i18next'
+import { useTranslation } from 'react-i18next';
 
 // styles
 import './Navbar.scss';
@@ -12,20 +12,20 @@ import logo from '../../assets/images/logo.png';
 import LanguageSelector from '../languageSelector/LanguageSelector';
 
 export default function Navbar() {
-	const { t } = useTranslation()
-	const { about, services, contact } = t("navbar")
+	const { t } = useTranslation();
+	const { about, services, contact } = t('navbar');
 
 	const navItems = [
-		{ to: 'home', text: 'Home', offset: -200 },
-		{ to: 'about', text: about, offset: 0 },
-		{ to: 'services', text: services, offset: 0 },
-		{ to: 'portfolio', text: 'Portfolio', offset: 0 },
-		{ to: 'contact', text: contact, offset: 0 },
+		{ to: 'home', text: 'Home', offset: -150 },
+		{ to: 'about', text: about, offset: -100 },
+		{ to: 'services', text: services, offset: -100 },
+		{ to: 'portfolio', text: 'Portfolio', offset: -100 },
+		{ to: 'contact', text: contact, offset: -100 },
 	];
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
 	const toggleMobileMenu = () => {
-		setMobileMenuOpen(prevSt => !prevSt)
+		setMobileMenuOpen((prevSt) => !prevSt);
 	};
 
 	return (
@@ -36,18 +36,17 @@ export default function Navbar() {
 					<img src={logo} alt='Website logo' className='nav__logo-image' />
 				</Link>
 				<div
-					className={`nav__hamburger ${mobileMenuOpen? 'open' : ''}`}
-					onClick={toggleMobileMenu}
-				>
+					className={`nav__hamburger ${mobileMenuOpen ? 'open' : ''}`}
+					onClick={toggleMobileMenu}>
 					<div className='nav__hamburger-line'></div>
 					<div className='nav__hamburger-line'></div>
 					<div className='nav__hamburger-line'></div>
 				</div>
-				<ul className={`nav__list ${mobileMenuOpen? 'open' : ''}`}>
+				<ul className={`nav__list ${mobileMenuOpen ? 'open' : ''}`}>
 					{navItems.map((item) => (
 						<li key={item.text} className='nav__list-item'>
 							<Link
-							onClick={() => setMobileMenuOpen(false)}
+								onClick={() => setMobileMenuOpen(false)}
 								activeClass='active'
 								spy={true}
 								offset={item.offset}

@@ -2,8 +2,6 @@
 
 The website reflects my way of looking at web design. It was created using HTML, CSS/SASS, JavaScript, React. You can check out the live version [here](https://vintaru37.github.io/my-portfolio/).
 
-
-
 # Features
 
 **Responsive design:** The website is optimized for all devices, including desktops, tablets, and mobile phones.
@@ -14,14 +12,11 @@ The website reflects my way of looking at web design. It was created using HTML,
 
 **Social media links:** Connect with me on LinkedIn, Facebook and Instagram.
 
-
 # Images
 
 ![](image-3.png)
 
 ![](image-1.png)
-
-
 
 # Contact
 
