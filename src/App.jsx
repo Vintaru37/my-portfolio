@@ -10,7 +10,7 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path='/my-portfolio/' element={<PageLayout />} />
+				<Route path='/' element={<PageLayout />} />
 			</Routes>
 		</BrowserRouter>
 	);
