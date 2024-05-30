@@ -1,6 +1,6 @@
 # My Portfolio Website
 
-The website reflects my way of looking at web design. It was created using HTML, CSS/SASS, JavaScript, React. You can check out the live version [here](https://vintaru37.github.io/my-portfolio/).
+The website reflects my way of looking at web design. It was created using HTML, CSS/SASS, JavaScript, React. You can check out the live version [here](https://bartoszgortych.com/).
 
 # Features
 
