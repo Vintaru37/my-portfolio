@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import './Portfolio.scss';
 
 // icons
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import { LuExternalLink } from "react-icons/lu";
 
 // images
 import CCImage from '../../assets/images/portfolio-img-1.png';
@@ -67,7 +67,7 @@ export default function Portfolio() {
 							<h3>{project.title}</h3>
 							<p>{project.description}</p>
 							<a target='_blank' rel='noopener' href={project.link}>
-								<FaExternalLinkAlt />
+							<LuExternalLink />
 							</a>
 						</div>
 					</div>

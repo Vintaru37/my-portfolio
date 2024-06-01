@@ -14,7 +14,7 @@ export default function About() {
   const { t } = useTranslation();
   const about = t("about");
   const [activeButton, setActiveButton] = useState(about.intTitle);
-  const { ref, inView } = useIntersectionObserver({threshold: 0.72});
+  const { ref, inView } = useIntersectionObserver();
 
   const data = [
     {

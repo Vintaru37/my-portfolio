@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import './Services.scss';
 
 // icons
+import { PiCodeBold } from "react-icons/pi";
 import { FaCode } from 'react-icons/fa';
 import { HiMiniWrenchScrewdriver } from 'react-icons/hi2';
 import { SlSpeedometer } from 'react-icons/sl';
@@ -17,7 +18,7 @@ export default function Services() {
 
 	const services = [
 		{
-			icon: FaCode,
+			icon: PiCodeBold,
 			title: ser.serOneTitle,
 			text: ser.serOneDesc,
 		},
