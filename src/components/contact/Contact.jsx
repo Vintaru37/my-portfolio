@@ -5,8 +5,8 @@ import { useState, useRef } from 'react';
 import './Contact.scss';
 
 // Icons
-import { FaLinkedin, FaSquareInstagram } from 'react-icons/fa6';
-import { FaFacebookSquare } from 'react-icons/fa';
+import { IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io5';
+import { IoLogoFacebook } from 'react-icons/io';
 
 // emailJS
 import emailjs from '@emailjs/browser';
@@ -49,7 +49,7 @@ export default function Contact() {
 
 	const form = useRef();
 
-	const { ref, inView } = useIntersectionObserver({ threshold: 0.45 });
+	const { ref, inView } = useIntersectionObserver();
 
 	function handleChange(e) {
 		const { name, value } = e.target;
@@ -179,21 +179,21 @@ export default function Contact() {
 						rel='noopener'
 						href='https://www.facebook.com/bartosz.gortych.315/'
 						className='contact__content-socials-item'>
-						<FaFacebookSquare /> Facebook
+						<IoLogoFacebook /> Facebook
 					</a>
 					<a
 						target='_blank'
 						rel='noopener'
 						href='https://www.linkedin.com/in/bartosz-gortych-944a592b7/'
 						className='contact__content-socials-item'>
-						<FaLinkedin /> LinkedIn
+						<IoLogoLinkedin /> LinkedIn
 					</a>
 					<a
 						target='_blank'
 						rel='noopener'
 						href='https://www.instagram.com/bartosz_gortych/'
 						className='contact__content-socials-item'>
-						<FaSquareInstagram /> Instagram
+						<IoLogoInstagram /> Instagram
 					</a>
 				</div>
 			</div>
