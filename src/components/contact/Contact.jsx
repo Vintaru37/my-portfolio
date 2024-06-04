@@ -32,24 +32,36 @@ export default function Contact() {
 		emailFormat,
 		msgReq,
 	} = t('contact');
-
 	const [errors, setErrors] = useState({
 		name: '',
 		email: '',
 		message: '',
 	});
-
 	const [formData, setFormData] = useState({
 		name: '',
 		email: '',
 		message: '',
 	});
-
 	const [wasSent, setWasSent] = useState(false);
-
 	const form = useRef();
-
 	const { ref, inView } = useIntersectionObserver();
+	const socials = [
+		{
+			href: 'https://www.facebook.com/bartosz.gortych.315/',
+			icon: IoLogoFacebook,
+			label: 'Facebook',
+		},
+		{
+			href: 'https://www.linkedin.com/in/bartosz-gortych-944a592b7/',
+			icon: IoLogoLinkedin,
+			label: 'LinkedIn',
+		},
+		{
+			href: 'https://www.instagram.com/bartosz_gortych/',
+			icon: IoLogoInstagram,
+			label: 'Instagram',
+		},
+	];
 
 	function handleChange(e) {
 		const { name, value } = e.target;
@@ -174,27 +186,16 @@ export default function Contact() {
 					<h3 className='contact__content-socials-title'>{sendInfo}</h3>
 					<p>{or}</p>
 					<h3 className='contact__content-socials-title'>{socialMedia}</h3>
-					<a
-						target='_blank'
-						rel='noopener'
-						href='https://www.facebook.com/bartosz.gortych.315/'
-						className='contact__content-socials-item'>
-						<IoLogoFacebook /> Facebook
-					</a>
-					<a
-						target='_blank'
-						rel='noopener'
-						href='https://www.linkedin.com/in/bartosz-gortych-944a592b7/'
-						className='contact__content-socials-item'>
-						<IoLogoLinkedin /> LinkedIn
-					</a>
-					<a
-						target='_blank'
-						rel='noopener'
-						href='https://www.instagram.com/bartosz_gortych/'
-						className='contact__content-socials-item'>
-						<IoLogoInstagram /> Instagram
-					</a>
+					{socials.map((social) => (
+						<a
+							key={social.href}
+							target='_blank'
+							rel='noopener'
+							href={social.href}
+							className='contact__content-socials-item'>
+							<social.icon /> {social.label}
+						</a>
+					))}
 				</div>
 			</div>
 		</section>
