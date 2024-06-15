@@ -1,7 +1,7 @@
 .services {
-	gap: .5em;
+	gap: 0.5em;
 	&__title {
-		margin-bottom: .3em;
+		margin-bottom: 0.3em;
 	}
 
 	&__subtitle {
@@ -50,7 +50,7 @@
 			}
 
 			&:hover {
-				scale: 1.1;
+				scale: 1.05;
 			}
 
 			&:hover::before {
@@ -79,14 +79,14 @@
 
 // SCROLL ANIMATIONS
 .services__boxes-box,
-.services__subtitle
-, .services__sub-info 
-{
+.services__subtitle,
+.services__sub-info {
 	opacity: 0;
 }
 
 .services.in-view {
-	.services__subtitle, .services__sub-info {
+	.services__subtitle,
+	.services__sub-info {
 		animation: fade-in 1s forwards;
 	}
 
@@ -103,7 +103,8 @@
 	}
 }
 .services.out-view {
-	.services__subtitle, .services__sub-info {
+	.services__subtitle,
+	.services__sub-info {
 		animation: fade-out 1s forwards;
 	}
 
@@ -124,7 +125,17 @@
 	.services {
 		&__boxes {
 			gap: 1em;
-			grid-template-columns: repeat(2, 1fr);
+			grid-template-columns: repeat(4, 1fr);
+
+			&-box {
+				&:first-child,
+				&:nth-child(2) {
+					grid-column: span 2;
+				}
+				&:last-child {
+					grid-column: 2 / 4;
+				}
+			}
 		}
 	}
 }
@@ -133,12 +144,16 @@
 	.services {
 		&__boxes {
 			grid-template-columns: 1fr;
-		}
-	}
-}
 
-@media (width <= 480px) {
-	.services__boxes-box:hover {
-		scale: 1.05;
+			&-box {
+				&:first-child,
+				&:nth-child(2) {
+					grid-column: span 1;
+				}
+				&:last-child {
+					grid-column: 1;
+				}
+			}
+		}
 	}
 }

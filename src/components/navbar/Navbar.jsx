@@ -6,7 +6,7 @@ import { useTranslation } from 'react-i18next';
 import './Navbar.scss';
 
 // images
-import logo from '../../assets/images/logo.png';
+import logo from '../../assets/images/logo.webp';
 
 // components
 import LanguageSelector from '../languageSelector/LanguageSelector';
@@ -17,10 +17,10 @@ export default function Navbar() {
 
 	const navItems = [
 		{ to: 'home', text: 'Home', offset: -200 },
-		{ to: 'about', text: about, offset: -100 },
-		{ to: 'services', text: services, offset: -100 },
-		{ to: 'portfolio', text: 'Portfolio', offset: -100 },
-		{ to: 'contact', text: contact, offset: -100 },
+		{ to: 'about', text: about, offset: -70 },
+		{ to: 'services', text: services, offset: -70 },
+		{ to: 'portfolio', text: 'Portfolio', offset: -70 },
+		{ to: 'contact', text: contact, offset: -70 },
 	];
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 

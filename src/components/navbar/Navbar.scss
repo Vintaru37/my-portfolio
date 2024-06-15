@@ -26,11 +26,11 @@
 
 		&__list {
 			display: flex;
-			gap: 2.5em;
+			gap: .3em;
 
 			&-item {
 				&-link {
-					padding-block: 1.2em;
+					padding: 1em;
 					font-size: 2rem;
 					font-weight: 500;
 					cursor: pointer;
@@ -107,16 +107,22 @@
 				top: 100%;
 				left: 0;
 				width: 100%;
+				gap: 1.3em;
 				flex-direction: column;
 				text-align: center;
-				background-color: #111111;
+				background-color: rgb(12, 12, 12);	
 				max-height: 0;
 				overflow: hidden;
-				transition: all 0.3s;
+				transition: all 0.4s;
 
 				&.open {
 					max-height: 450px;
 					padding: 1em 0;
+					border-top: 1px solid var(--secondary-color);
+					border-bottom: 1px solid var(--secondary-color);
+					// box-shadow: 0 0 6px var(--secondary-color);
+					// border-radius: 30px;
+
 				}
 
 				&-item {
