@@ -7,9 +7,9 @@ import './Portfolio.scss';
 import { LuExternalLink } from "react-icons/lu";
 
 // images
-import CCImage from '../../assets/images/portfolio-img-1.png';
-import ForestImage from '../../assets/images/portfolio-img-2.png';
-import QuizzicalImage from '../../assets/images/portfolio-img-3.png';
+import CCImage from '../../assets/images/portfolio-img-1.webp';
+import ForestImage from '../../assets/images/portfolio-img-2.webp';
+import QuizzicalImage from '../../assets/images/portfolio-img-3.webp';
 
 // hooks
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';

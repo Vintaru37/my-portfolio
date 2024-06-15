@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next'
 import './About.scss';
 
 // images
-import aboutImg from '../../assets/images/img.png';
+import aboutImg from '../../assets/images/img.webp';
 
 // hooks
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';

@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 import './Header.scss';
 
 // images
-import headerImage from '../../assets/images/header-photo-2.png';
+import headerImage from '../../assets/images/header-photo-2.webp';
 
 export default function Header() {
 	const { t } = useTranslation();
