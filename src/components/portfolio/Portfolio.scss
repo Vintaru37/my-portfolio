@@ -62,9 +62,21 @@
 				& p {
 					font-weight: 600;
 					margin-bottom: 0.5em;
+					text-align: justify;
 				}
 
-				& a {
+				&-coauthor {
+					text-decoration: underline;
+					cursor: pointer;
+					transition: all .3s;
+
+					&:hover {
+						text-decoration: underline;
+						color: rgb(81, 51, 189);
+					}
+				}
+
+				&-link {
 					padding: 1.1em;
 					color: rgb(105, 156, 243);
 					background-color: #f2f2f2;
