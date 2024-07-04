@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { useState, useRef } from 'react';
+import { useState, useRef, useTransition } from 'react';
 
 //styles
 import './Contact.scss';
@@ -7,6 +7,7 @@ import './Contact.scss';
 // Icons
 import { IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io5';
 import { IoLogoFacebook } from 'react-icons/io';
+import { ImSpinner2 } from "react-icons/im";
 
 // emailJS
 import emailjs from '@emailjs/browser';
@@ -43,6 +44,7 @@ export default function Contact() {
 		message: '',
 	});
 	const [wasSent, setWasSent] = useState(false);
+	const [isSending, setIsSending] = useState(false);
 	const form = useRef();
 	const { ref, inView } = useIntersectionObserver();
 	const socials = [
@@ -87,6 +89,7 @@ export default function Contact() {
 
 		if (Object.values(validate).length === 0) {
 			setErrors({});
+			setIsSending(true);
 			emailjs
 				.sendForm('service_u0tzjk9', 'template_be9gspg', form.current, {
 					publicKey: 'INtVAtjgyPgPgRvc0',
@@ -99,12 +102,14 @@ export default function Contact() {
 							message: '',
 						});
 						setWasSent(true);
+						setIsSending(false)
 						setTimeout(() => {
 							setWasSent(false);
 						}, 4000);
 					},
 					(error) => {
 						console.log('FAILED...', error.text);
+						setIsSending(false);
 					}
 				);
 		} else {
@@ -179,8 +184,14 @@ export default function Contact() {
 						<p className='contact__content-form-error'>{errors.message}</p>
 					)}
 					<button className='contact__content-form-btn primary-btn'>
-						<span>{wasSent ? wasMsgSent : submitBtn}</span>
-					</button>
+            {isSending ? (
+              <span>
+				<ImSpinner2 className='spinner' />
+              </span>
+            ) : (
+              <span>{wasSent ? wasMsgSent : submitBtn}</span>
+            )}
+          </button>
 				</form>
 				<div className='contact__content-socials'>
 					<h3 className='contact__content-socials-title'>{sendInfo}</h3>

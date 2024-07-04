@@ -4,12 +4,12 @@ import { useTranslation } from 'react-i18next';
 import './Portfolio.scss';
 
 // icons
-import { LuExternalLink } from "react-icons/lu";
+import { LuExternalLink } from 'react-icons/lu';
 
 // images
 import CCImage from '../../assets/images/portfolio-img-1.webp';
 import ForestImage from '../../assets/images/portfolio-img-2.webp';
-import QuizzicalImage from '../../assets/images/portfolio-img-3.webp';
+import LexArcanum from '../../assets/images/portfolio-img-4.webp';
 
 // hooks
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
@@ -19,6 +19,7 @@ export default function Portfolio() {
 	const {
 		proOneTitle,
 		proOneDesc,
+		proOneCoauthor,
 		proTwoTitle,
 		proTwoDesc,
 		proThreeTitle,
@@ -29,6 +30,8 @@ export default function Portfolio() {
 		{
 			title: proOneTitle,
 			description: proOneDesc,
+			coauthor: proOneCoauthor,
+			coauthorLink: 'https://maciejgortych.com/',
 			link: 'https://twogordev-first-app.onrender.com/',
 			image: CCImage,
 		},
@@ -41,8 +44,8 @@ export default function Portfolio() {
 		{
 			title: proThreeTitle,
 			description: proThreeDesc,
-			link: 'https://vintaru37.github.io/quiz-app/',
-			image: QuizzicalImage,
+			link: 'https://coral-starling-319321.hostingersite.com/',
+			image: LexArcanum,
 		},
 	];
 
@@ -65,9 +68,28 @@ export default function Portfolio() {
 						/>
 						<div className='portfolio__projects-item-layer'>
 							<h3>{project.title}</h3>
-							<p>{project.description}</p>
-							<a target='_blank' rel='noopener' href={project.link}>
-							<LuExternalLink />
+							<p>
+								{project.description}{' '}
+								{project.coauthor && (
+									<>
+										<a
+											href={project.coauthorLink}
+											target='_blank'
+											rel='noopener'
+											className='portfolio__projects-item-layer-coauthor'>
+											{project.coauthor}
+										</a>
+										.
+									</>
+								)}
+							</p>
+
+							<a
+								className='portfolio__projects-item-layer-link'
+								target='_blank'
+								rel='noopener'
+								href={project.link}>
+								<LuExternalLink />
 							</a>
 						</div>
 					</div>

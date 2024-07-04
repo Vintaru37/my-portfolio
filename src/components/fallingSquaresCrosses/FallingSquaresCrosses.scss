@@ -1,0 +1,55 @@
+.falling-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	z-index: -50;
+}
+
+.square,
+.cross {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	background-color: transparent;
+	border: 15px solid rgba(71, 68, 68, 0.5);
+	border-radius: 12px;
+	// z-index: -50;
+	
+}
+
+.square {
+	transform: rotate(45deg);
+}
+
+.cross {
+	transform: rotate(90deg);
+}
+
+.falling-element {
+	animation: fall 15s linear infinite;
+}
+
+@keyframes fall {
+	0% {
+		top: -20px;
+		transform: rotate(0deg);
+	}
+
+	100% {
+		top: 100vh;
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}

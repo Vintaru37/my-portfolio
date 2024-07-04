@@ -48,11 +48,14 @@
 
 	"portfolio": {
 		"proOneTitle": "HealThyBody - Licznik kalorii",
-		"proOneDesc": "HealThyBody to aplikacja do liczenia kalorii, która pozwala użytkownikom śledzić dzienne spożycie kalorii. Projekt stworzony w ramach współpracy z Maciejem Gortychem.",
+		"proOneDesc": "HealThyBody to aplikacja do liczenia kalorii, która pozwala użytkownikom śledzić dzienne spożycie kalorii. Projekt stworzony w ramach współpracy z ",
+		"proOneCoauthor": "Maciejem Gortychem",
 		"proTwoTitle": "The Forest - Prywatny Park",
 		"proTwoDesc": "Forest jest przykładem tego, jak może wyglądać strona prywatnego parku. Jest to również jedna z pierwszych stron, które stworzyłem.",
-		"proThreeTitle": "Quizzical - Test wiedzy ogólnej",
-		"proThreeDesc": "Quizzical to aplikacja, która pozwala użytkownikom sprawdzić swoją wiedzę w różnych dziedzinach."
+		"proThreeTitle": "Lex Arcanum - Kancelaria Adwokacka",
+		"proThreeDesc": "Lex Arcanum to wgląd w dedykowaną stronę internetową kancelarii adwokackiej. Prezentuje ona usługi firmy i sprawy związane z prawem.",
+		"proFourTitle": "Quizzical - Test wiedzy ogólnej",
+		"proFourDesc": "Quizzical to aplikacja, która pozwala użytkownikom sprawdzić swoją wiedzę w różnych dziedzinach."
 	},
 	"contact": {
 		"title": "Kontakt",
@@ -62,8 +65,8 @@
 		"socialMedia": "Daj znać na social media!",
 		"submitBtn": "Wyślij",
 		"wasMsgSent": "Wiadomość wysłana!",
-		"formNamePlc": "Twoje imię",
-		"formEmailPlc": "Twój adres email",
+		"formNamePlc": "Imię",
+		"formEmailPlc": "Adres email",
 		"formMessagePlc": "Wiadomość",
 		"nameReq": "To pole jest wymagane",
 		"emailReq": "To pole jest wymagane",
