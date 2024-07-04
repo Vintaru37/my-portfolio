@@ -169,16 +169,16 @@
 	}
 }
 
-@media (hover: none) {
-	.portfolio {
-		&__projects {
-			&-item {
-				&-layer {
-					opacity: 1;
-					visibility: visible;
-					height: 100%;
-				}
-			}
-		}
-	}
-}
+// @media (hover: none) {
+// 	.portfolio {
+// 		&__projects {
+// 			&-item {
+// 				&-layer {
+// 					opacity: 1;
+// 					visibility: visible;
+// 					height: 100%;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
