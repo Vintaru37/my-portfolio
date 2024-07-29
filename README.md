@@ -24,4 +24,4 @@ The website reflects my way of looking at web design. It was created using HTML,
 
 Feel free to contact me through the contact form on the website or through my social media links. I am always open to new opportunities and collaborations.
 
-**Thank you for visiting my portfolio website! I hope you find it informative and inspiring.**
+**Thank you for visiting my portfolio website!**
